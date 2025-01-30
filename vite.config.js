@@ -11,6 +11,8 @@ export default defineConfig({
     proxy: {
       '/api': {
           target: 'https://netflix-back-1.onrender.com',
+          changeOrigin: true,
+        secure: false,
           
       },
   }
